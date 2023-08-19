@@ -1,0 +1,33 @@
+*::-webkit-scrollbar{
+    width: 5px;
+}
+*::-webkit-scrollbar-track{
+    background:transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background:#c7c7c7;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(184,184,184,0.5) transparent;
+}
+body{
+    font-family: 'SF Pro Display', sans-serif;
+}
+h1,h2,h3{
+    color: rgb(54, 54, 54);
+}
+
+@import "./player";
+@import "./song";
+@import "./library";
