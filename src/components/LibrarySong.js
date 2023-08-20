@@ -12,7 +12,7 @@ const LibrarySong = ({song,setCurrentSong,audioRef,isPlaying,songs,id,setSongs})
       }
     };
 
-      // Adding State
+      // Adding Active State
     const newSongs = songs.map(song => {
       if(song.id === id){
         return {
