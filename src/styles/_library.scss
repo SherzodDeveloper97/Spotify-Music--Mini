@@ -17,6 +17,7 @@
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     opacity: 0;
+    background-color: #fff;
     h2{
         padding:1rem 2rem;
     };  
@@ -59,4 +60,9 @@
 }
 .selected{
     background: rgb(199, 112, 228);
+}
+@media screen and (max-width: 768px) {
+    .library{
+        width: 100%;
+    }
 }

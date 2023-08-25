@@ -5,7 +5,10 @@ import "../styles/_nav.scss";
 const Nav = ({libraryStatus,setLibraryStatus}) => {
   return (
     <nav>
-        <h1>Spotify analog</h1>
+        <h1>
+          <i className="fa-brands fa-spotify"></i> &nbsp;
+          Spotify Analog
+        </h1>
         <button onClick={() => setLibraryStatus(!libraryStatus)}>
             Library
             <FontAwesomeIcon icon={faMusic} />
