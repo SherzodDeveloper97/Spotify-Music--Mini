@@ -1,6 +1,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleLeft, faAngleRight, faPlay, faPause} from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
+import { playSong } from "../util";
 
 const Player = ({currentSong,isPlaying,setIsPlaying, audioRef,songs,setCurrentSong,setSongs}) => {
   // Event Handlers
@@ -72,6 +73,7 @@ const Player = ({currentSong,isPlaying,setIsPlaying, audioRef,songs,setCurrentSo
       }
       setCurrentSong(songs[currentIndex - 1]);
     }
+    playSong(isPlaying,audioRef);
   }
 
   const getTime = (time) => {

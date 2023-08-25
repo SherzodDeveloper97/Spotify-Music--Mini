@@ -1,16 +1,10 @@
-
+import {playSong} from "../util";
 
 const LibrarySong = ({song,setCurrentSong,audioRef,isPlaying,songs,id,setSongs}) => {
   const songSelectHandler = () => {
     setCurrentSong(song);
-    if(isPlaying){
-      const playPromise = audioRef.current.play();
-      if(playPromise !== undefined){
-        playPromise.then((audio) => {
-          audioRef.current.play();
-        })
-      }
-    };
+    // Bug Fix - skip-forward-play
+    playSong(isPlaying,audioRef);
 
       // Adding Active State
     const newSongs = songs.map(song => {
